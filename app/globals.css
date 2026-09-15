@@ -189,3 +189,10 @@ button, input { font: inherit; }
   .fire-button { right: 28px; bottom: 54px; width: 88px; height: 88px; }
   .bottom-hint { font-size: 10px; bottom: 8px; }
 }
+
+html, body { overscroll-behavior: none; }
+.game-root { user-select: none; }
+.game-canvas { cursor: crosshair; }
+@media (pointer: coarse) {
+  .game-canvas { cursor: default; }
+}
